@@ -1,0 +1,29 @@
+.container-cabecalho {
+    text-align: center;
+    padding: 20px;
+    background-color: #04233f;
+}
+
+.container-cabecalho h3{
+    font-weight: 600;
+    font-size: 2em;
+    color: #1190ff;
+}
+
+/*----------------------------------------- */
+.container-navegacao{
+    text-align: center;
+    padding: 20px;
+    background-color: #06345d;
+}
+
+.container-navegacao a {
+    font-size: 1.5em;
+    margin: 0px 50px;
+    text-decoration: none;
+    color: #7cc2ff; 
+}
+
+.container-navegacao a:hover/*hover significa aquela parte de passar o mouse em cima*/ {
+   color: #ffffff;
+}
