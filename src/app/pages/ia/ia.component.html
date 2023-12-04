@@ -1,0 +1,15 @@
+<div class="container">
+  <div class="container-question">
+    <label for=""> Pergunta </label>
+    <textarea  cols="100" rows="10" [(ngModel)]="questionText"></textarea>
+    <button (click)="sendQuestion()"> Enviar </button>
+    <span *ngif="isloading"> Aguarde, conectando...</span>
+    <div *ngif="errorText"> Ocorreu um erro!!</div>
+  </div>
+  <div class="container-answer">
+    <ng-container>
+    <dt *ngif="questionAnswer.role == 'user'"><strong>Pergunta</strong></dt>
+    <dd *ngif="questionAnswer.role == 'assistant'"> Resposta</dd>
+    </ng-container>
+  </div>
+</div>

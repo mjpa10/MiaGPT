@@ -15,14 +15,14 @@
 }
 
 .container-quem-somos .servico .icone {
-    margin-bottom: 10px; 
+    margin-bottom: 10px;
 }
 
 .container-quem-somos .servico-texto {
     font-family: 'Courier New', Courier, monospace;
     margin-top: 20px;
     font-size: 1.2em;
-    color: #81c4ff;    
+    color: #81c4ff;
 }
 
 .container-quem-somos .servico-texto-realce {
@@ -37,6 +37,10 @@
     text-align: center;
 }
 
+.container-servicos-contatos h1{
+color: white;
+}
+
 .container-servicos-contatos .botoes-servicos-contatos {
     padding: 60px;
     text-align: center;
@@ -44,7 +48,7 @@
 
 .botoes-servicos-contatos a {
     display: block;
-    max-width: 200px;
+    max-width: 300px;
     text-decoration: none;
     font-size: 1.2em;
     background-color: #008eb9;

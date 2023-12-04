@@ -1,13 +1,13 @@
 .container-navegacao a:hover/*hover significa aquela parte de passar o mouse em cima*/ {
     color: #ffffff;
  }
- 
+
  /*----------------------------------------- */
  .container-quem-somos {
      background-color:#05192a ;
      overflow: auto;
  }
- 
+
  .container-quem-somos .servico {
      float: center;
      margin: 60px auto;
@@ -17,38 +17,38 @@
      border-radius: 10px;
      text-align: center;
  }
- 
+
  .container-quem-somos .servico .icone {
-     margin-bottom: 10px; 
+     margin-bottom: 10px;
  }
- 
+
  .container-quem-somos .servico-texto {
      font-family: 'Courier New', Courier, monospace;
      margin-top: 20px;
      font-size: 1.2em;
-     color: #81c4ff;    
+     color: #81c4ff;
  }
- 
+
  .container-quem-somos .servico-texto-realce {
      color: white;
      font-weight: bold;
  }
- 
+
  /*----------------------------------------- */
  .container-servicos-contatos {
      background-color: #082946;
      padding: 80px;
      text-align: center;
  }
- 
+
  .container-servicos-contatos .botoes-servicos-contatos {
      padding: 60px;
      text-align: center;
  }
- 
+
  .botoes-servicos-contatos a {
      display: block;
-     max-width: 200px;
+     max-width: 300px;
      text-decoration: none;
      font-size: 1.2em;
      background-color: #008eb9;
@@ -57,12 +57,21 @@
      margin: 10px auto;
      border-radius: 10px;
  }
- 
+ p{
+  color: white;
+ }
+
+
+ #inputGroup-sizing-default{
+  background-color: #06345d;
+  color: #7cc2ff;
+ }
+
  .botoes-servicos-contatos a:hover {
      background-color: white;
      color: black;
  }
- 
+
  /*----------------------------------------- */
  .container-servicos {
      background-color: #05192a;
@@ -70,28 +79,31 @@
      padding: 60px;
      overflow: auto;
  }
- 
+
  .container-servicos h1{
      font-size: 3em;
      color: white;
      margin-bottom: 20px;
  }
- 
+
+ .container-servicos-contatos h1 {
+   color: white;
+ }
+
  .container-servicos h3 {
      color: #2097ff;
      padding: 20px 0;
  }
- 
+
  .container-servicos article {
      width: 40%;
      margin: auto;
      float: center;
  }
- 
+
  /*----------------------------------------- */
  .container-servicos li {
      margin-bottom: 20px;
      margin-left: 50px;
      color:white;
  }
- 

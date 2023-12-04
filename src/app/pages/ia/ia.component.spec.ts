@@ -1,16 +1,16 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ContatoComponent } from './contato.component';
+import { IaComponent } from './ia.component';
 
-describe('ContatoComponent', () => {
-  let component: ContatoComponent;
-  let fixture: ComponentFixture<ContatoComponent>;
+describe('IaComponent', () => {
+  let component: IaComponent;
+  let fixture: ComponentFixture<IaComponent>;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [ContatoComponent]
+      declarations: [IaComponent]
     });
-    fixture = TestBed.createComponent(ContatoComponent);
+    fixture = TestBed.createComponent(IaComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

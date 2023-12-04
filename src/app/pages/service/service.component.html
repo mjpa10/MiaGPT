@@ -1,0 +1,47 @@
+<section class="container-servicos">
+
+  <h1 class="text-center">Os nossos serviços</h1>
+
+  <article>
+    <h3>Soluções inovadoras para a sua empresa:</h3>
+    <ul>
+      <li>Deseja respostas efecientes para sua empresa?</li>
+      <li>Aumentamos o banco de respostas de acordo com a sua pergunta.</li>
+      <li>Incremento garantido de 50% nos lucros da empresa.</li>
+    </ul>
+  </article>
+
+  <article>
+    <h3>Projetamos o futuro do seu negócio:</h3>
+    <ol>
+      <li>Pensamos na melhor solução.</li>
+      <li>Desenvolvemos o produto em parceria consigo.</li>
+      <li>Aplicamos a melhor resposta para a sua empresa.</li>
+      <li>Fazemos a monitoração dos seus gostos.</li>
+    </ol>
+  </article>
+
+  <article>
+<div class="input-group mb-3">
+  <span class="input-group-text" id="inputGroup-sizing-default">Tire suas dúvidas:
+  </span>
+  <input type="text" class="form-control" aria-label="Sizing example input"
+    aria-describedby="inputGroup-sizing-default" [(ngModel)]="textoDigitado"  appRainbow>
+  </div>
+  
+  <div *ngIf="textoDigitado">
+    <p> você digitou : {{ textoDigitado }}</p>
+  </div>
+
+
+  </article>
+</section>
+
+<!--Área de clicar para ver serviços e contatos-->
+<section class="container-servicos-contatos">
+    <h1>Obtenha mais informações na área de serviços e contate-nos</h1>
+    <div class="botoes-servicos-contatos">
+        <a href="/servicos">Ver serviços</a>
+        <a href="/contatos">Contatos</a>
+    </div>
+</section>

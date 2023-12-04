@@ -1,0 +1,36 @@
+.container{
+  padding: 10px;
+  font-size: 1.3rem;
+}
+ label {
+   display: block;
+   margin-bottom: 10px;
+ }
+ textarea{
+  display: block;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 1.3rem;
+ }
+ button{
+  font-size: 1.3rem;
+ }
+
+ .loading{
+  color: cadetblue;
+ }
+ .error{
+  color: red;
+ }
+
+.container-answer{
+  margin-top: 30px;
+}
+ .container-answer dt {
+    margin-bottom: 10px;
+ }
+ .container-answer dd {
+   margin-bottom: 30px;
+ }
+

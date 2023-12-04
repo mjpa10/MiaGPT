@@ -1,0 +1,20 @@
+<section class="container-quem-somos">
+  <article *ngFor="let servico of servicos" class="servico">
+    <img [src]="servico.icone" class="icone"  />
+    <p class="servico-texto">
+      {{ servico.texto }}
+    </p>
+  </article>
+</section>
+
+<!--Área de clicar para ver serviços e contatos-->
+<section class="container-servicos-contatos">
+  <h1>Obtenha mais informações na área de serviços e contate-nos</h1>
+  <div class="botoes-servicos-contatos">
+    <a href="/servicos">Ver serviços</a>
+    <a href="/contatos">Contatos</a>
+  </div>
+</section>
+
+
+

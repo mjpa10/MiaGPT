@@ -4,11 +4,13 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
-import { HomeComponent } from './components/home/home.component';
-import { ServiceComponent } from './components/service/service.component';
+import { HomeComponent } from './pages/home/home.component';
+import { ServiceComponent } from './pages/service/service.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { ContatosComponent } from './pages/contatos/contatos.component';
-import { ContatoComponent } from './components/contato/contato.component';
+import { RainbowDirective } from './rainbow.directive';
+import { FormsModule } from '@angular/forms';
+import { IaComponent } from './pages/ia/ia.component'
 
 @NgModule({
   declarations: [
@@ -18,11 +20,13 @@ import { ContatoComponent } from './components/contato/contato.component';
     ServiceComponent,
     FooterComponent,
     ContatosComponent,
-    ContatoComponent
+    RainbowDirective,
+    IaComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
