@@ -1,15 +1,15 @@
 <div class="container">
   <div class="container-question">
     <label for=""> Pergunta </label>
-    <textarea  cols="100" rows="10" [(ngModel)]="questionText"></textarea>
+    <textarea cols="100" rows="10" [(ngModel)]="questionText"></textarea>
     <button (click)="sendQuestion()"> Enviar </button>
-    <span *ngif="isloading"> Aguarde, conectando...</span>
-    <div *ngif="errorText"> Ocorreu um erro!!</div>
+    <span *ngIf="isloading"> Aguarde, conectando...</span>
+    <div *ngIf="errorText"> Ocorreu um erro!!</div>
   </div>
   <div class="container-answer">
-    <ng-container>
-    <dt *ngif="questionAnswer.role == 'user'"><strong>Pergunta</strong></dt>
-    <dd *ngif="questionAnswer.role == 'assistant'"> Resposta</dd>
+    <ng-container *ngFor="let questionAnswer of questionAnswerList.slice(1)">
+      <dt *ngIf="questionAnswer.role === 'user'"><strong>Pergunta:</strong> {{ questionAnswer.content }}</dt>
+      <dd *ngIf="questionAnswer.role === 'assistant'"><strong>Resposta:</strong> {{ questionAnswer.content }}</dd>
     </ng-container>
   </div>
 </div>
