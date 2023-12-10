@@ -10,7 +10,8 @@ import { FooterComponent } from './components/footer/footer.component';
 import { ContatosComponent } from './pages/contatos/contatos.component';
 import { RainbowDirective } from './rainbow.directive';
 import { FormsModule } from '@angular/forms';
-import { IaComponent } from './pages/ia/ia.component'
+import { IaComponent } from './pages/ia/ia.component';
+import { TemaBlackService } from './tema-black.service';
 
 @NgModule({
   declarations: [
@@ -22,13 +23,18 @@ import { IaComponent } from './pages/ia/ia.component'
     ContatosComponent,
     RainbowDirective,
     IaComponent,
+    
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+
+}
