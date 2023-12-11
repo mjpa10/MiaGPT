@@ -1,4 +1,4 @@
-/* estilos da minha página */
+/* estilos da minha pÃ¡gina */
 
 * {
   margin: 0;
@@ -7,7 +7,7 @@
 
 body {
   font-family: Arial, Helvetica, sans-serif;
-  
+
 }
 body {
   transition: background-color 0.5s;
@@ -18,7 +18,11 @@ body {
   color: #000000;
 }
 
-.dark-theme {
+.dark-theme body{
+  background-color: #05192a;
+
+}
+.dark-theme textarea body{
   background-color: #1a1a1a;
   color: #ffffff;
 }

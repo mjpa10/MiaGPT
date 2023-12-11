@@ -1,36 +1,63 @@
-.container{
-  padding: 10px;
-  font-size: 1.3rem;
+body {
+  font-size: 1.1em;
+  overflow: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  padding: 6.5%;
 }
- label {
-   display: block;
-   margin-bottom: 10px;
- }
- textarea{
-  display: block;
+
+label {
+  display: flex;
+  margin-top: 25px;
+  margin-bottom: 10px;
+  color: white;
+}
+
+textarea {
+  display: flex;
   margin-bottom: 10px;
   padding: 10px;
   border-radius: 10px;
   font-size: 1.3rem;
- }
- button{
-  font-size: 1.3rem;
- }
-
- .loading{
-  color: cadetblue;
- }
- .error{
-  color: red;
- }
-
-.container-answer{
-  margin-top: 30px;
 }
- .container-answer dt {
-    margin-bottom: 10px;
- }
- .container-answer dd {
-   margin-bottom: 30px;
- }
 
+.btn-primary {
+  font-size: 1.3rem;
+  color: #f5f5dc;
+  background-color: #105088;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+#loading {
+  color: white;
+  margin-left: 15px;
+}
+
+#error {
+  color: rgb(255, 0, 0);
+}
+
+.container-answer {
+  margin-top: 30px;
+  max-height: 300px;
+  max-width: 80%;
+  overflow-y: auto;
+  background-color: #f4f4f4;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+  text-align: left;
+
+}
+
+.dt {
+  margin-bottom: 10px;
+}
+
+.dd {
+  margin-bottom: 30px;
+}
