@@ -6,6 +6,7 @@ import { ServiceComponent } from './pages/service/service.component';
 import { IaComponent } from './pages/ia/ia.component';
 
 const routes: Routes = [
+  { path: '', redirectTo: '/home', pathMatch: 'full' },
   {path: 'contatos', component: ContatosComponent},
    {path: 'servicos', component: ServiceComponent},
     {path: 'home', component: HomeComponent},

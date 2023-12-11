@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { TemaBlackService } from 'src/app/tema-black.service';
 
 @Component({
   selector: 'app-header',
@@ -6,5 +7,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent {
+  constructor(private TemaBlackService: TemaBlackService) {}
+
+  toggleTheme() {
+    this.TemaBlackService.toggleTheme();
+  }
 
 }

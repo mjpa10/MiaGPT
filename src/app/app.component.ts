@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { TemaBlackService } from './tema-black.service';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'AV22';
+  constructor(private TemaBlackService:TemaBlackService) {}
+
+  toggleTheme() {
+    this.TemaBlackService.toggleTheme();
+  }
 }
